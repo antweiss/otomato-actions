@@ -6,7 +6,7 @@ jobs:                       # list of jobs
     steps:                  #list of steps
       - name: Checkout the code
         uses: actions/checkout@v2
-      - run: tar -czf myrepo.tgz .
+      - run: tar -czf myrepo.tgz README.md
         name: Build the code   
       - run: tar -tzvf myrepo.tgz
         name: Test the artifact
