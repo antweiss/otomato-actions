@@ -5,3 +5,5 @@ jobs:                       # list of jobs
     runs-on: ubuntu-latest
     steps:                  #list of steps
       - run: echo Hello Github Actions
+      - run: pwd            # where are we?
+      - run: ls -la         # look around
