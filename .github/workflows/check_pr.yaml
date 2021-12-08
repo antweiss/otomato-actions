@@ -1,0 +1,7 @@
+name: Test the quality of the PR
+on: pull_request
+jobs:
+  test_pr:
+    steps:
+      - run: echo Testing
+        name: test One
