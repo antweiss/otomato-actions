@@ -12,3 +12,5 @@ jobs:
         run: echo "Hello ${NAME}. Today we're learning ${SUBJECT} with ${COMPANY}."
         env: 
           NAME: Octocat
+      - name: Show workflow name
+        run: echo "Workflow name is ${GITHUB_WORKFLOW}"
