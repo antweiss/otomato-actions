@@ -4,7 +4,11 @@ jobs:                       # list of jobs
   say-hello:             #job name
     runs-on: ubuntu-latest
     steps:                  #list of steps
-      - run: echo Hello Github Actions
-      - uses: actions/checkout@v2
+      - name: Say Hello
+        run: echo Hello Github Actions
+      - name: Checkout the code
+        uses: actions/checkout@v2
       - run: pwd            # where are we?
+        name: Show current dir
       - run: ls -la         # look around
+        name: Look around
